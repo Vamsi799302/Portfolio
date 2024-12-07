@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar a:hover {
+    color: #03a9f4;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    background: url('your-image-path.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#e077e0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home h3 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.home h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.home p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.btn-box {
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-box:hover {
+    background-color: #0288d1;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about-img img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.about-text h2 span {
+    color: #03a9f4;
+}
+
+.about-text h4 {
+    font-size: 22px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.btn-box {
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-box:hover {
+    background-color: #0288d1;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.heading1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.Technical-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.bar {
+    position: relative;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.progress-line {
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #03a9f4;
+}
+
+.progress-line span {
+    display: block;
+    height: 100%;
+    width: 80%; /* Customize this percentage based on skill level */
+    background-color: #0288d1;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.contact-text h4 {
+    font-size: 22px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.contact-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0288d1;
+}
+
+/* Footer Section */
+.last-text {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.last-text p {
+    font-size: 14px;
+}
